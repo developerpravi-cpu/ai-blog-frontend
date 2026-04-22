@@ -30,7 +30,7 @@ function EditPost() {
 
   /* ================= FETCH OLD DATA ================= */
   useEffect(() => {
-    fetch(`https://ai-blog-backend-ke3o.onrender.com/api/posts/${id}`)
+    fetch(`https://ai-blog-backend-new.onrender.com/api/posts/${id}`)
       .then(res => res.json())
       .then(data => {
         setPost({
@@ -40,7 +40,7 @@ function EditPost() {
           tags: data.tags.join(","),
           image: null,
           preview: data.image
-            ? `https://ai-blog-backend-ke3o.onrender.com/uploads/${data.image}`
+            ? `https://ai-blog-backend-new.onrender.comuploads/${data.image}`
             : ""
         });
       })
@@ -86,7 +86,7 @@ function EditPost() {
       formData.append("image", post.image);
     }
 
-    const res = await fetch(`https://ai-blog-backend-ke3o.onrender.com/api/posts/${id}`, {
+    const res = await fetch(`https://ai-blog-backend-new.onrender.com/api/posts/${id}`, {
       method: "PUT",
       headers: {
         Authorization: `Bearer ${token}`

@@ -12,7 +12,7 @@ function Home() {
 
   useEffect(() => {
    const token = localStorage.getItem("token");
-    fetch("https://ai-blog-backend-ke3o.onrender.com/api/posts", {
+    fetch("https://ai-blog-backend-new.onrender.com/api/posts", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -115,7 +115,7 @@ function Home() {
               
               {post.image && (
                 <img
-                  src={`https://ai-blog-backend-ke3o.onrender.com/uploads/${post.image}`}
+                  src={`https://ai-blog-backend-new.onrender.com/uploads/${post.image}`}
                   alt="blog"
                 />
               )}

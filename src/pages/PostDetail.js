@@ -11,7 +11,7 @@ function PostDetail() {
   const [error, setError] = useState("");
     
   useEffect(() => {
-    fetch(`https://ai-blog-backend-ke3o.onrender.com/api/posts/${id}`)
+    fetch(`https://ai-blog-backend-new.onrender.com/api/posts/${id}`)
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch post");
         return res.json();
@@ -37,7 +37,7 @@ function PostDetail() {
       {post.image && (
         <div className="banner">
           <img
-            src={`https://ai-blog-backend-ke3o.onrender.com/uploads/${post.image}`}
+            src={`https://ai-blog-backend-new.onrender.com/uploads/${post.image}`}
             alt="banner"
           />
           <div className="banner-overlay" />

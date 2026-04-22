@@ -6,7 +6,7 @@ function Posts() {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
-    fetch("http://localhost:3001/api/posts", {
+    fetch("https://ai-blog-backend-new.onrender.com/api/posts", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -33,7 +33,7 @@ function Posts() {
           >
             {/* IMAGE */}
             <img
-              src={`http://localhost:3001/uploads/${post.image}`}
+              src={`https://ai-blog-backend-new.onrender.com/uploads/${post.image}`}
               alt="banner"
               className="post-image"
             />

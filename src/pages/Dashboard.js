@@ -43,7 +43,7 @@ function Dashboard() {
     }
 
     try {
-      const res = await fetch("https://ai-blog-backend-ke3o.onrender.com/api/ai/generate", {
+      const res = await fetch("https://ai-blog-backend-new.onrender.com/api/ai/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -77,7 +77,7 @@ function Dashboard() {
     }
 
     try {
-      const res = await fetch("https://ai-blog-backend-ke3o.onrender.com/api/ai/improve", {
+      const res = await fetch("https://ai-blog-backend-new.onrender.comapi/ai/improve", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -149,7 +149,7 @@ function Dashboard() {
 
     const token = localStorage.getItem("token");
 
-    const res = await fetch("https://ai-blog-backend-ke3o.onrender.com/api/posts", {
+    const res = await fetch("https://ai-blog-backend-new.onrender.comapi/posts", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token}`,

@@ -17,7 +17,7 @@ function Login() {
   e.preventDefault();
 
   try {
-    const res = await fetch("https://ai-blog-backend-ke3o.onrender.com/api/auth/login", {
+    const res = await fetch("https://ai-blog-backend-new.onrender.com/api/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
